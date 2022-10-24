@@ -5,9 +5,11 @@ import com.sun.jna.Native;
 
 @SuppressWarnings("unused")
 public interface LibAntiSleep extends Library  {
-    LibAntiSleep INSTANCE = Native.load("libanti_sleep", LibAntiSleep.class);
+    LibAntiSleep INSTANCE = Native.load("anti_sleep", LibAntiSleep.class);
 
     void enable();
 
     void disable();
+
+    void update();
 }
