@@ -3,9 +3,15 @@ plugins {
     id "com.github.johnrengelman.shadow" version "7.1.2"
 }
 
+version rootProject.version
+
 architectury {
     platformSetupLoomIde()
     fabric()
+}
+
+loom {
+    accessWidenerPath = project(":common").loom.accessWidenerPath
 }
 
 configurations {

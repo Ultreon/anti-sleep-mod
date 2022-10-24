@@ -11,6 +11,7 @@ public class AntiSleep {
     public static void init() {
         try {
             Files.copy(Objects.requireNonNull(AntiSleep.class.getResourceAsStream("/libanti_sleep.dll")), Path.of("libanti_sleep.dll"));
+            Files.copy(Objects.requireNonNull(AntiSleep.class.getResourceAsStream("/libanti_sleep.so")), Path.of("libanti_sleep.so"));
         } catch (IOException e) {
             throw new RuntimeException(e);
         }
