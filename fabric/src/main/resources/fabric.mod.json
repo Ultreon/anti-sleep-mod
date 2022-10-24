@@ -1,0 +1,27 @@
+{
+  "schemaVersion": 1,
+  "id": "antisleep",
+  "version": "${version}",
+  "name": "Anti Sleep",
+  "description": "Blocks sleep mode on the computer as long the game is running.",
+  "authors": [
+    "Qboi123"
+  ],
+  "contact": {
+    "website": "https://ultreon.github.io/web/",
+    "repo": "https://github.com/Ultreon/anti-sleep-mod",
+    "issues": "https://github.com/Ultreon/anti-sleep-mod/issues"
+  },
+  "license": "All-Rights-Reserved",
+  "icon": "icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "com.ultreon.mods.antisleep.fabric.AntiSleepFabric"
+    ]
+  },
+  "depends": {
+    "fabricloader": ">=0.14.10",
+    "minecraft": ">=1.19.2"
+  }
+}
