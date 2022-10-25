@@ -27,6 +27,7 @@ configurations {
 dependencies {
     forge "net.minecraftforge:forge:${rootProject.forge_version}"
     forgeRuntimeLibrary project(":forge")
+     /*modRuntimeOnly*/ include(project(":forge"))
 }
 
 processResources {
