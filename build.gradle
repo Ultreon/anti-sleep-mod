@@ -17,18 +17,18 @@ Object getIngame_version() {
 }
 
 forgix {
-    group = "com.ultreon.mods"
-    mergedJarName = "anti-sleep-${version}.jar"
+    group = maven_group
+    mergedJarName = "$archives_base_name-${version}.jar"
     outputDir = "build/libs/merged"
 
     forge {
         projectName = "merge-forge"
-        jarLocation = "build/libs/anti-sleep-${version}.jar"
+        jarLocation = "build/libs/$archives_base_name-${version}.jar"
     }
 
     fabric {
         projectName = "merge-fabric"
-        jarLocation = "build/libs/anti-sleep-${version}.jar"
+        jarLocation = "build/libs/$archives_base_name-${version}.jar"
     }
 }
 
